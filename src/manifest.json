@@ -1,0 +1,33 @@
+{
+    "name": "dequery",
+    "version": "0.1.0",
+    "description": "Rewrite requests to strip URL forwarders and selected query strings",
+    "permissions": [
+        "storage",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "scripts": [ "background.js" ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "unknown16.png",
+            "24": "unknown24.png",
+            "32": "unknown32.png"
+        },
+        "default_title": "dequery",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "manifest_version": 2
+}
